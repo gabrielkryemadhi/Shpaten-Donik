@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <h2 class="text-center text-light my-3 gold"><i class="fab fa-phoenix-framework gold"></i> Slot Game</h2>
+      <h2 class="text-center text-light my-3 gold"><i class="fab fa-phoenix-framework gold"></i> Palla e art'</h2>
       <div class="row justify-content-center mb-3">
         <div class="col col-auto">
           <canvas id="slot" width="440" height="240"></canvas>
@@ -24,7 +24,7 @@
         <div class="col col-auto">
           <div class="input-group mb-3 w-75 m-auto">
             <div class="input-group-prepend">
-              <span class="input-group-text">Current WIN</span>
+              <span class="input-group-text">Fitimi tash </span>
             </div>
             <input type="text" class="form-control w-auto" id="cwin" value="0" />
           </div>
@@ -32,8 +32,8 @@
       </div>
       <div class="row justify-content-center mb-3">
         <div class="col col-auto">
-          <button class="btn btn-danger px-5" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
-          <button class="btn btn-secondary px-5" id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
+          <button class="btn btn-danger px-5" id="spin"><i class="fas fa-sync-alt"></i> BJERI </button>
+          <button class="btn btn-secondary px-5" id="auto"><i class="fab fa-android"></i> AUTO (FIK)</button>
         </div>
       </div>
       <div class="row justify-content-center mb-3">
@@ -63,13 +63,13 @@
       <div class="row justify-content-center">
         <div class="col col-auto">
           <select id="mode" class="btn btn-default">
-            <option value="random">Random</option>
-            <option value="fixed">Fixed</option>
+            <option value="random">E rastesishme </option>
+            <option value="fixed">Fikse </option>
           </select>
           <select id="where" class="btn btn-default">
-            <option value="top">top</option>
-            <option value="middle">middle</option>
-            <option value="bottom">bottom</option>
+            <option value="top">lart</option>
+            <option value="middle">në mes</option>
+            <option value="bottom">poshtë</option>
           </select>
           <select id="what" class="btn btn-default"></select>
         </div>
@@ -77,10 +77,10 @@
       <div class="row justify-content-center my-3">
         <div class="col col-auto">
           <button class="btn btn-warning w-auto" type="button" id="checkout">
-            <i class="fas fa-money-bill-alt"></i> CHECKOUT
+            <i class="fas fa-money-bill-alt"></i> DIL JASHT'
           </button>
           <button class="btn btn-primary w-auto" type="button" data-toggle="modal" data-target="#payTable">
-            <i class="fas fa-money-bill-alt"></i> Pay Table
+            <i class="fas fa-money-bill-alt"></i> RREGULLORJA
           </button>
         </div>
       </div>
@@ -98,7 +98,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="payTableTitle">Pay Table</h5>
+            <h5 class="modal-title" id="payTableTitle">Ka edhe rregulla </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -107,12 +107,12 @@
             <table class="table table-dark table-hover table-responsive">
               <thead>
                 <tr>
-                  <td>Reel1</td>
-                  <td>Reel2</td>
-                  <td>Reel3</td>
-                  <td>TOP</td>
-                  <td>MIDDLE</td>
-                  <td>BOTTOM</td>
+                  <td>njishi </td>
+                  <td>dyshi </td>
+                  <td>treshi </td>
+                  <td>LART</td>
+                  <td>N' MES</td>
+                  <td>POSHT'</td>
                 </tr>
               </thead>
               <tbody>
@@ -202,6 +202,7 @@
         </div>
       </div>
     </div>
+    <audio src="/sound/skender.mp3" loop="true" autosplay="true" width="0" height="0">
     <script src="./js/reel.js"></script>
     <script src="./js/slot.js"></script>
     <script type="text/javascript">
@@ -235,7 +236,7 @@
         imgDot: null,
         autoModeDelay: 3000,
         sound: {
-          win: new Audio('./sound/win.mp3'),
+          win: new Audio('./sound/skender.mp3'),
           spin: new Audio('./sound/spin.mp3'),
         },
       };
